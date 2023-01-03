@@ -3,12 +3,12 @@ var UStarZoneUsers = {
     UStarlightExplorer: {
         username: "星光探索者",
         intro: "the exploler of the Starlight Studio",
-        avator: "./image/redsky.jpg"
+        avator: "https://s1.ax1x.com/2023/01/03/pSiczLT.jpg"
     },
     UStarlightStudio: {
         username: "星光工作室",
         intro: "仰望星空,漫天繁星不负缘。追随光,奔赴梦,星光璀璨",
-        avator: "./image/starlight_avator.jpg"
+        avator: "https://s1.ax1x.com/2023/01/03/pSicLJs.jpg"
     },
     UAnan: {
         username: "安仔仔哇",
@@ -28,7 +28,7 @@ var UStarZoneUsers = {
     UHardToSay: {
         username: "很难说出口",
         intro: "很难说出口是吗?",
-        avator: "./image/only_tonight.png"
+        avator: "https://s1.ax1x.com/2023/01/03/pSigpeU.png"
     },
     UTatsukiMengchen: {
         username: "Tatsuki丶梦辰",
