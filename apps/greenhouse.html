@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星光花房</title>
+    <style>
+        * 
+        {
+            margin: 0;
+            padding: 0;
+        }
+@font-face {
+    font-family: HappyZcool-2016;
+    src: local("站酷快乐体2016修订版"),
+         url(../font/ZhanKuKuaiLeTi2016XiuDingBan-1.woff),
+         url(../font/ZhanKuKuaiLeTi2016XiuDingBan-1.ttf);
+    font-display: swap;
+}
+        body
+        {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(to right, #12C2E9, #C471ED);
+        }
+        #starflower 
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200px;
+            height: 200px;
+            background-image: url(../image/rose.png);
+            background-size: 200px 200px;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        #float_dialog
+        {
+            position: absolute;
+            top: -100px;
+            padding: 10px;
+            width: 200px;
+            height: 100px;
+            font-family: HappyZcool-2016;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+    </style>
+    <script>
+        var show_count = 0;
+    var sayings = [
+        "You like her, and she broke you heart.",
+        "Many people start a career with a dream, then get busy forgetting it.",
+        "生命就像一朵朵花，每个人都在不同的时间绽放。",
+        "做错的不是我，错的是这个世界！",
+        "Even though the stars are br oken, the leaking light is s till beautiful.",
+        "The happiest thing is you just be yourself someone loves you.",
+        "雨下大了，回不去了，我说的不是家.",
+        "我以为足够真诚就会被对得起。",
+        "Rome wasn't built in a day.",
+        "Let's face it!",
+        "你永远都不会知道自己到底有多坚强，直到有一天你除了坚强别无选择。",
+        "星光不问赶路人，时光不负有心人",
+        "Dare to try, means you have already taken the first step to success. ",
+        "After doing my best, I chose to follow the lead. ",
+        "没有人规定一朵花一定要长成向日葵或玫瑰。",
+        "是秋天染黄了树叶，还是夕阳凉了人心。",
+        "Time forces people to be strong, with a smile to pay all the injuries.",
+        "The deepest hurt is always the most true feelings.",
+        "很多事情，只要心甘情愿，就不会觉得累。",
+        "寂寞有一千种滋味，却只有一种体会，",
+        "To be or not to be,it's a problem.",
+        "Whatever is worth doing at all is worth doing well",
+        "如果你看到前面的阴影，别怕，那是因为你背后有阳光。",
+        "永不期待，永不假设，永不强求。顺其自然，若是注定发生，必会如你所愿。",
+        "I want to lay in sunflower, even depressed, still toward the sun.",
+        "Temporary success comes at the cost of years of failure.",
+        "真正的勇气不是压倒一切，而是不被一切压倒。",
+        "所有的事情到最后都会好起来的，如果不够好，说明还没到最后。",
+        "Expect that there is much happiness in life that has not yet happened.",
+        "It's not disappearing. It's just living a good life.",
+        "生活里也要灯火可亲，有梦可做。",
+        "你样样都好，样样比她强，你只有一个缺点，你不是她。",
+        "Thank you for showing up, no matter what the end result is.",
+        "Even if there is a break, don't fail to meet.",
+        "世界太大，生命太短，要过得尽量像自己想要的样子才对",
+        "不要着急，最好的总在不经意出现。",
+        "People who have seen flowers will know the gentleness of the wind.",
+        "Light will eventually sprinkle on you, you will be brilliant.",
+        "自由散漫的凉风能治愈乱糟糟的坏心情。",
+        "你不是暗淡渺小的星光，而是囊括了明月的整个银河",
+        "Any mind that is capable of a real sorrow is capable of good.",
+        "I came to you, twilight thousands of miles are my foreshadowing.",
+        "我们坠落,破碎,掉入深渊,但我们终会被托起,被治愈,我们无所畏惧。",
+        "期待与漫天繁星的相遇！"
+    ];
+    window.onload = function()
+    {
+        setInterval(function () {
+        document.getElementById("float_dialog").innerText = sayings[show_count];
+        ++show_count;
+        if (show_count == sayings.length) {
+            show_count = 0;
+        }
+        }, 3000);
+    };
+
+    </script>
+</head>
+
+<body>
+    <div id="starflower">
+        <div id="float_dialog">期待与漫天繁星的相遇！</div>
+    </div>
+</body>
+
+</html>

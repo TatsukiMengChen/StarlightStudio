@@ -1,0 +1,74 @@
+/** init STYLE START**/
+:root {
+    /* 字体主题颜色1 START */
+    /* --text-color: #868dec;
+    --main-bak-color: #FFF3B0;
+    --link-color: #a2ff8f;
+    --theme-color: #A5FFD6; */
+    /* 字体主题颜色1 END */    
+    
+    /* 字体主题颜色2 START */
+    /* --text-color: #FF686B;
+    --main-bak-color: #A5FFD6;
+    --link-color: #84DCC6;
+    --theme-color: #F7FFF7; */
+    /* 字体主题颜色2 END */
+
+    /* 字体主题颜色3 START */
+    /* --text-color: #353535;
+    --main-bak-color: #E8EDDF;
+    --link-color: #FF6978;
+    --theme-color: #6EEB83; */
+    /* 字体主题颜色3 END */
+
+    /* 字体主题颜色4 START */
+    --text-clor: #000000;
+    --main-bak-color: #f1f3f5;
+    --link-color: #FF1654;
+    --theme-color: #ffffff;
+    /* 字体主题颜色4 END */
+
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+em, i {
+    font-style: normal;
+}
+li
+{
+    list-style-position: inside;
+    color: var(--text-color);
+}
+
+img {
+    border: 0;
+}
+body {
+    position: relative;
+    min-width: 270px;
+    background-color: var(--main-bak-color);
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: var(--text-color);
+}
+/** init STYLE END**/
+
+.article_container {
+    margin: 9px auto;
+    width: 94%;
+    max-width: 800px;
+    background-color: var(--theme-color);
+}
+
+.article_view {
+    margin: 0 9px;
+    padding: 9px 0;
+}

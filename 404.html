@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+    <style>
+        .container
+        {
+            position: relative;
+            height: 100vh;
+        }
+        .center
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            text-align: center;
+        }
+        .container a
+        {
+            display: block;
+            margin: 3px auto;
+            padding: 3px;
+            width: fit-content;
+            height: fit-content;    
+            transition: all 0.7s;
+        }
+        .container a:hover
+        {
+            box-shadow: 0 0 10px var(--link-color),
+                0 0 25px var(--link-color),
+                0 0 50px var(--link-color),
+                0 0 200px var(--link-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="header" id="header">
+        <div class="logo"></div>
+        <ul id="menu_list" class="hidden_box">
+            <li><a href="./index.html">首页</a></li>
+            <li><a href="./zone.html">领地</a></li>
+            <li><a href="./about.html">关于</a></li>
+        </ul>
+        <div class="menu_toggle" onclick="show_menu()"></div>
+    </div>
+
+    <div class="container">
+        <div class="center">
+            <h1>我们找不到这个链接</h1>
+            <p>虽然找不到那个链接，但是下面是通往星光领地的入口，<br>你也许会感兴趣！</p>
+            <a href="./zone.html" class="rough glass_look">点我进入!</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="info">
+            <a class="logo" href="./about.html"></a>
+            <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <div style="clear: left;"></div>
+        <div class="links">
+            <dl>
+                <dt>关于工作室</dt>
+                <dd><a href="./about.html">关于我们</a></dd>
+                <dd><a href="./about.html#join_us">加入我们</a></dd>
+                <dd><a href="./about.html#contact_us">联系我们</a></dd>
+                <dd><a href="./about.html#carrer">发展历程</a></dd>
+            </dl>
+            <dl>
+                <dt>星光风范</dt>
+                <dd><a href="./zone.html">星光领地</a></dd>
+                <dd><a href="./zone.html">星光公告</a></dd>
+                <dd><a href="https://starlight.feishu.cn/docs/doccnVG1ihNp41tPK6idcsNXuZc/">管理规范</a></dd>
+                <dd><a href="./zone.html#notice">有用工具</a></dd>
+            </dl>
+            <dl>
+                <dt>友情链接</dt>
+                <dd><a href="https://www.starlight.work/">真正的官网</a></dd>
+                <dd><a href="https://blog.kaikai.zone/">凯凯的博客</a></dd>
+                <dd><a href="https://user.qzone.qq.com/3260922891">安安的空间</a></dd>
+                <dd><a href="https://www.github.com/">GitHub</a></dd>
+            </dl>
+        </div>
+        <p style="text-align: center;">copyright&copy TheStarlightStudio All Rights Reserved</p>
+    </div>
+</body>
+</html>

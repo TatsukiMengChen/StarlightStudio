@@ -1,0 +1,147 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+
+    /* hide the scrollbar for IE */
+    -ms-overflow-style: none;
+    /* hide the scrollbar for FIREFOX */
+    overflow: -moz-scrollbars-none;
+}
+/* hide the scrollbar for CHROME */
+*::-webkit-scrollbar
+{
+    width: 0;
+}
+h2, p
+{
+    text-align: center;   
+}
+li 
+{
+    list-style-type: none;
+}
+.glass 
+{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+.maincover 
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.maincover>img 
+{
+    width: 100%;
+    height: 100%;    
+    object-fit: cover;
+    flex: 1;
+    border: 0;
+}
+.container
+{
+    position: absolute;
+    width: 230px;
+    top: 9px;
+    left: 9px;
+}
+.clock 
+{
+    position: relative;
+    width: 100%;
+    height: 120px;
+}
+.clock p
+{
+    font-size: larger;
+}
+.center_view
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    max-width: 740px;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#life_saying
+{
+    position: absolute;
+    width: 100%;
+    bottom: 9px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: smaller;
+}
+#task_count
+{
+    font-size: smaller;
+}
+
+.task_bar 
+{
+    display: block;
+    margin-top: 9px;
+    width: 100%;
+    height: 300px;
+}
+.task_list
+{
+    margin: 0 9px;
+    height: 240px;
+    overflow-y: scroll;
+}
+.task_list li
+{
+    width: 100%;
+    height: 30px;
+    line-height: 32px;
+}
+.botton_view
+{
+    width: fit-content;
+    margin: auto;
+}
+.botton_view span
+{
+    padding: 3px;
+}
+.click_menu
+{
+    position: absolute;
+    display: block;
+    top: 9px;
+    left: -300px;
+    width: 100px;
+    height: 90px;
+    z-index: 18;
+    box-shadow: 0 0 10px #f1f3f5;
+}
+.click_menu li
+{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: red;
+}
+.finished_task::before
+{
+    content: "√ ";
+    color: green;
+}
+
+@media screen and (max-width: 600px) {
+    .container
+    {
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}

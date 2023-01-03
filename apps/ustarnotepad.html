@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星光记事本</title>
+    <style>
+@font-face 
+{
+    font-family: HappyZcool-2016;
+    src: local("站酷快乐体2016修订版"),
+         url(../font/ZhanKuKuaiLeTi2016XiuDingBan-1.woff),
+         url(../font/ZhanKuKuaiLeTi2016XiuDingBan-1.ttf);
+    font-display: swap;
+}
+    </style>
+    <link rel="stylesheet" href="../css/app_style/style_ustarnotepad.css">
+
+    <script src="../js/app_js/script_ustarnotepad.js"></script>
+</head>
+<body>
+    <div class="edit_view">
+        <div class="main_container">
+            <div class="edit_container">
+                <input type="text" name="" id="title" placeholder="在这里输入文章标题">
+                <textarea name="" id="content" cols="30" rows="10" placeholder="在这里输入，开始记录今天的生活吧!"></textarea>
+            </div>
+            <ul class="action_container">
+                <li onclick="save_article();">保存文章</li>
+                <li onclick="open_article()">打开文件</li>
+                <input type="file" id="open_file" style="display:none" onchange="read_file(this, event)" accept=".txt">
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

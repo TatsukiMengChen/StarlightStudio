@@ -1,0 +1,56 @@
+.container
+{
+    margin: 0 auto;
+    padding-top: 90px;
+    width: 92%;
+    max-width: 1050px;
+}
+
+
+h1,  p
+{
+    text-align: center;
+}
+
+.main_intro img
+{
+    margin-top: 9px;
+    width: 100%;
+}
+
+.carrer_intro
+{
+    padding-top: 18px;
+}
+.honor_view
+{
+    margin-top: 18px;
+}
+
+.honor_view li
+{
+    padding: 6px 0;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.join_intro
+{
+    margin-top: 18px;
+}
+
+.join_intro a{
+    display: block;
+    margin: 5px auto;
+    padding: 5px;
+    width: fit-content;
+    transition: all 0.7s;
+}
+
+.join_intro a:hover
+{
+    box-shadow: 0 0 10px var(--link-color),
+                0 0 25px var(--link-color),
+                0 0 50px var(--link-color),
+                0 0 200px var(--link-color);
+}

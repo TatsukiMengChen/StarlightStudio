@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星光自习室</title>
+    <link rel="stylesheet" href="../css/app_style/style_studyhall.css">
+    <script src="../js/app_js/script_studyhall.js"></script>
+</head>
+<body>
+    <div class="maincover">
+        <img src="https://s1.ax1x.com/2023/01/03/pSigpeU.png" alt="Image Not Found">
+        <div class="container">
+            <div class="clock glass">
+                <h2>已学习时间</h2>
+                <p id="time_view">00:00:00</p>
+                <p id="task_count">完成任务: 0/0</p>
+                <P id="life_saying">期待与漫天繁星的相遇！</P>
+            </div>
+            <div class="task_bar glass">
+                <h2>任务清单</h2>
+                    <ul class="task_list" id="task_list">
+                    </ul>
+                <div class="botton_view">
+                    <span class="add_task glass" onclick="add_task()">添加任务</span>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="center_view glass"></div> -->
+        <ul class="click_menu glass" id="click_menu">
+            <li onclick="finish_task()">完成任务</li>
+            <li onclick="remove_task()">删掉任务</li>
+            <li>取消操作</li>
+        </ul>
+    </div>
+</body>
+</html>

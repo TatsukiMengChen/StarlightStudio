@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星光计算器</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        body
+        {
+            min-width: 250px;
+        }
+        .container
+        {
+            position: absolute;
+            padding: 12px;
+            width: 86%;
+            height: 88%;
+            max-width: 390px;
+            top: 50%;
+            left: 50%;
+            background-color:aquamarine;
+            border-radius: 8px;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        #result_view
+        {
+            height: 16%;
+            background-color: aqua;
+            border-radius: 8px;
+        }
+        #button_view
+        {
+            margin-top: 2%;
+            height: 82%;
+        }
+        ul{
+            height: 100%;
+        }
+        li
+        {
+            float: left;
+            margin: 2%;
+            width: 16%;
+            height: 16%;
+            background-color: #fff;
+            border-radius: 8px;
+            text-align: center;
+            line-height: 440%;
+            list-style-type: none;
+            user-select: none;
+        }
+    </style>
+    <script>
+        var result_view;
+        var button_view;
+        window.onload = function()
+        {
+            result_view = document.getElementById("result_view");
+            button_view = document.getElementById("button_view");
+        };
+        window.onclick = function(ev)
+        {
+            if (button_view)
+            {
+                for(var i = 0; i != button_view.childNodes.length; ++i)
+                {
+                    var elem = button_view.childNodes[i]
+                    if (elem.contains(ev.target))
+                    {
+                        answer_click(elem.innerText);
+                    }
+                }
+            }
+        };
+        function answer_click(content)
+        {
+            switch(content)
+            {
+            case "=":
+                calc_result(result_view.innerText);
+                break;
+            case "清空":
+                result_view.innerText = "";
+                break;
+            case "退格":
+                result_view.innerText = result_view.innerText.substring(0, result_view.innerText.length - 1);
+                break;
+            default:
+                result_view.innerText += content;
+            }
+        }
+        function calc_result(content)
+        {
+            if (content.length == 0)
+            {
+                return;
+            }
+            alert("计算完成");
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div id="result_view"></div>
+        <ul id="button_view">
+                <li>^</li>
+                <li>(</li>
+                <li>)</li>
+                <li>清空</li>
+                <li>退格</li>
+                <li>sin</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>+</li>
+                <li>cos</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>-</li>
+                <li>tan</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>*</li>
+                <li>%</li>
+                <li>.</li>
+                <li>0</li>
+                <li style="background-color: blueviolet;">=</li>
+                <li>/</li>
+        </ul>
+    </div>
+</body>
+</html>

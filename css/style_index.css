@@ -1,0 +1,148 @@
+h1{
+    font-size: 38px;
+}
+p
+{
+    font-size: large;
+}
+
+.studio_intro_box {
+    margin: 5% 3%;
+}
+
+.main_cover {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+
+.main_cover .background_img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex: 1;
+}
+
+
+.main_cover .center_title {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 80%;
+    z-index: 7;
+    text-align: center;
+}
+
+
+.main_cover .center_title h1 {
+    font-size: 2.4em;
+}
+
+.main_cover .center_title p {
+    font-size: 1.2em;
+}
+.main_cover .center_title a {
+    display: block;
+    margin: 2px auto;
+    width: 100px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.7s;
+}
+.main_cover .center_title a:hover {
+    box-shadow: 0 0 10px var(--link-color),
+                0 0 25px var(--link-color),
+                0 0 50px var(--link-color),
+                0 0 200px var(--link-color);
+}
+
+@media screen and (max-width: 460px) {
+    .main_cover .center_title {
+        text-align: left;
+    }
+    .main_cover .center_title a {
+        margin: 2px 0;
+    }
+}
+
+.studio_intro {
+    /* background-image: linear-gradient(to right, #EAD6EE, #A0F1EA); */
+    background-image: linear-gradient(to right, #CCFBFF, #EF96C5);
+}
+
+.studio_intro_box {
+    padding: 20px 0;
+}
+
+.container
+{
+    width: 92%;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.left
+{
+    float: left;
+}
+.right
+{
+    float: right;
+}
+.text_intro
+{
+    width: 39.5%;
+}
+
+.img_intro
+{
+    width: 60.5%;
+}
+.img_intro img
+{
+    margin: 0 2%;
+    width: 96%;
+}
+
+.first_intro, .second_intro
+{
+    padding: 15px 0;
+}
+
+.third_intro h1
+{
+    text-align: center;
+}
+
+.third_intro img
+{
+    display: block;
+    float: left;
+    margin: 1%;
+    width: 23%;
+}
+
+@media screen and (max-width: 700px) 
+{
+    .text_intro, .img_intro
+    {
+        width: 100%;
+    }
+    .left, .right
+    {
+        float: none;
+    }
+    .third_intro img
+    {
+        width: 100%;
+        float: none;
+    }
+}

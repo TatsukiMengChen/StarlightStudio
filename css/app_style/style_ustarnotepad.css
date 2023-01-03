@@ -1,0 +1,74 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #6A82FB, #FC5C7D);
+}
+.edit_view
+{
+    position: absolute;
+    width: 82%;
+    max-width: 630px;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: white;
+    border-radius: 8px;
+}
+.main_container
+{
+    position: absolute;
+    width: 92%;
+    height: 92%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.action_container
+{
+    height: 20px;
+}
+.edit_container
+{
+    height: calc(100% - 20px);
+}
+li
+{
+    float: right;
+    display: block;
+    margin: auto 2px;
+    padding: 0 5px;
+    width: 70px;
+    height: 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-family: "HappyZcool-2016";
+    background-image: linear-gradient(to right, #6A82FB, #FC5C7D);
+}
+textarea, input
+{
+    display: block;
+    width: 100%;
+    outline: none;
+    border: 0;
+    font-family: "HappyZcool-2016";
+}
+textarea
+{
+    height: 90%;
+    font-size: medium;
+    resize: none;
+}
+input{
+    height: 10%;
+    text-align: center;
+    font-size: larger;
+}
